@@ -8,6 +8,9 @@ class Robots:
         self.power_level = 100
         self.weapon = weapon
 
+    def set_name(self):
+        pass
+
 
 def set_name(self):
     self.name = input("enter robot name")
@@ -50,6 +53,8 @@ marvin = Robots("Marvin")
 
 six = Robots("Six")
 
+robotFleet = ["Calculon", "Bender", "Marvin", "Six"]
+
 
 class Dinos:
     def __init__(self):
@@ -73,6 +78,8 @@ gorgo = Dinos("Gorgo")
 
 yoshi = Dinos("Yoshi")
 
+dinoHerd = ["Rodan", "Grumpy", "Gorgo", "Yoshi"]
+
 
 def power_dinos(self, amount, account):
     if account == 1:
@@ -91,6 +98,10 @@ def get_attack_from_collection(options):
     return options(random_int)
 
 
+def attack():
+    pass
+
+
 def attack_assignment():
     weapons = ('razor claws', 'spike tail', 'sonic blast', 'thunderous stomp')
 
@@ -100,3 +111,24 @@ def attack_assignment():
         chosen_attack = get_attack_from_collection(attack)
 
         satisfied = input(f"Your attack is {chosen_attack}. Is this deadly enough?")
+
+
+def robot_attack_dino(self, weapon, account=None):
+    if account == 1:
+        self.weapon.attack()
+
+    else:
+        self.weapon.attack()
+
+
+def lose_health():
+    if self.weapon(20):
+        print(f"You have lost 20 health points.")
+
+
+def dino_attack_robot(self, type, attack):
+    if account == 1:
+        self.weapon.attack()
+
+    else:
+        self.weapon.attack
