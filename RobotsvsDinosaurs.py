@@ -126,9 +126,17 @@ def lose_health():
         print(f"You have lost 20 health points.")
 
 
-def dino_attack_robot(self, type, attack):
+def dino_attack_robot(self):
     if account == 1:
         self.weapon.attack()
 
     else:
-        self.weapon.attack
+        self.weapon.attack(20)
+
+
+def battle_ends():
+    if robotFleet == lose_health():
+        print(f"Battle over, Robots lose.")
+
+    elif dinoHerd == lose_health():
+        print(f"battle over, Dinos lose")
