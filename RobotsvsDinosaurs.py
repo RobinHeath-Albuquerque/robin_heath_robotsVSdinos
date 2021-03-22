@@ -2,7 +2,7 @@ import random
 
 
 class Robots:
-    def __init__(self, name, health, power_level, weapon, ):
+    def __init__(self, name, health, power_level, weapon, ) -> object:
         self.name = ''
         self.health = 100
         self.power_level = 100
@@ -126,17 +126,10 @@ def lose_health():
         print(f"You have lost 20 health points.")
 
 
-def dino_attack_robot(self):
+def dino_attack_robot(self, type, attack):
     if account == 1:
         self.weapon.attack()
 
     else:
-        self.weapon.attack(20)
+        var = self.weapon.attack
 
-
-def battle_ends():
-    if robotFleet == lose_health():
-        print(f"Battle over, Robots lose.")
-
-    elif dinoHerd == lose_health():
-        print(f"battle over, Dinos lose")
